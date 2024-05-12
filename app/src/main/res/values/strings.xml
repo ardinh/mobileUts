@@ -3,4 +3,11 @@
     <string name="content_description">none</string>
     <string name="hot_news_for_you">Hot News for you</string>
     <string name="page_title_home">Home</string>
+    <string name="login_title">Login</string>
+    <string name="username_hint">Masukan Username</string>
+    <string name="password_hint">Masukan Password</string>
+    <string name="repassword_hint">Masukan Ulang Password</string>
+    <string name="login_desc"><![CDATA[Silahkan Masukan Username & Password Anda]]></string>
+    <string name="register_desc"><![CDATA[Silahkan Buat Username & Password Anda]]></string>
+    <string name="register_title">Register</string>
 </resources>

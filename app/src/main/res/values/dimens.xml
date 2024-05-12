@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="button_pressed_padding">2.5dp</dimen>
+    <dimen name="button_padding">2dp</dimen>
+    <dimen name="button_radius">8dp</dimen>
+</resources>
