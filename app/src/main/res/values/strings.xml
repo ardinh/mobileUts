@@ -19,4 +19,9 @@
     <string name="buat_kata_sandi">Buat kata sandi</string>
     <string name="ulang_kata_sandi">Ulang kata sandi</string>
     <string name="sudah_punya_akun">Sudah punya akun</string>
+    <string name="sport">Olahraga</string>
+    <string name="bisnis">Bisnis</string>
+    <string name="tech">Teknologi</string>
+    <string name="general">Umum</string>
+    <string name="title">Daily News</string>
 </resources>

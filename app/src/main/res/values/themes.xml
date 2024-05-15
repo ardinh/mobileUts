@@ -29,4 +29,14 @@
         <item name="android:windowLightStatusBar">true</item>
         <item name="android:windowDrawsSystemBarBackgrounds">true</item>
     </style>
+
+    <style name="Widget.MobileUts.Chip" parent="Widget.MaterialComponents.Chip.Action">
+        <item name="android:textSize">15sp</item>
+
+        <item name="chipBackgroundColor">@color/white</item>
+
+        <item name="chipStrokeColor">@color/blue_80</item>
+        <item name="chipStrokeWidth">1dp</item>
+        <item name="chipCornerRadius">50dp</item>
+    </style>
 </resources>

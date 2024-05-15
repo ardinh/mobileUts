@@ -2,12 +2,12 @@ package com.id.mobileuts
 
 import android.app.Activity
 import android.content.Context
-import android.net.Uri
 import android.util.Log
 import android.view.View
 import com.bumptech.glide.Glide
 import com.id.mobileuts.databinding.ItemNewsBinding
 import com.id.mobileuts.models.News
+import com.id.mobileuts.utils.util
 import java.text.ParseException
 import java.text.SimpleDateFormat
 import java.util.Calendar
@@ -41,7 +41,7 @@ class NewsAdapter(
                     Glide.with(context)
                         .load(data.urlToImage)
                         .placeholder(R.drawable.ic_news_paper)
-                        .circleCrop()
+                        .centerCrop()
                         .into(imgIcon)
                 }
                 tvTitle.text = data.title

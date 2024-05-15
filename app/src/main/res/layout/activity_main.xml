@@ -1,13 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/template_toolbar_gradient" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="8dp"
+        android:layout_marginTop="16dp">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_general"
+            style="@style/Widget.MobileUts.Chip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="@string/general"
+            app:chipEndPadding="8dp" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_business"
+            style="@style/Widget.MobileUts.Chip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="@string/bisnis"
+            app:chipEndPadding="8dp"/>
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_tech"
+            style="@style/Widget.MobileUts.Chip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="@string/tech"
+            app:chipEndPadding="8dp"/>
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_sport"
+            style="@style/Widget.MobileUts.Chip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="@string/sport"
+            app:chipEndPadding="8dp"/>
+    </LinearLayout>
+
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="@id/chip_sport"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/chip_sport">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
 </LinearLayout>

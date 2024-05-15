@@ -1,4 +1,4 @@
-package com.id.mobileuts
+package com.id.mobileuts.utils
 
 import java.text.DecimalFormat
 import java.text.NumberFormat

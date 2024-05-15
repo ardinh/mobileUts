@@ -11,23 +11,36 @@
     android:layout_marginHorizontal="16dp"
     android:elevation="3dp">
 
-    <ImageView
-        android:id="@+id/img_icon"
-        android:layout_width="36dp"
-        android:layout_height="36dp"
-        android:contentDescription="@string/content_description"
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/news_image"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="0dp"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:src="@drawable/ic_news_paper"/>
+        app:layout_constraintEnd_toStartOf="@id/tv_title">
+
+        <ImageView
+            android:id="@+id/img_icon"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:contentDescription="@string/content_description"
+            android:src="@drawable/ic_news_paper"/>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+
 
     <TextView
         android:id="@+id/tv_title"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/content_description"
-        app:layout_constraintStart_toEndOf="@id/img_icon"
+        app:layout_constraintStart_toEndOf="@id/news_image"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginStart="52dp"
+        android:layout_marginStart="16dp"
         android:textSize="15sp"
         android:textStyle="bold" />
 
@@ -39,7 +52,7 @@
         android:layout_marginStart="16dp"
         android:textSize="15sp"
         app:layout_constraintTop_toBottomOf="@id/tv_title"
-        app:layout_constraintStart_toEndOf="@id/img_icon"
+        app:layout_constraintStart_toEndOf="@id/news_image"
         />
 
     <TextView
