@@ -10,4 +10,13 @@
     <string name="login_desc"><![CDATA[Silahkan Masukan Username & Password Anda]]></string>
     <string name="register_desc"><![CDATA[Silahkan Buat Username & Password Anda]]></string>
     <string name="register_title">Register</string>
+    <string name="email">Email\n</string>
+    <string name="kata_sandi">Password\n</string>
+    <string name="sign_in">Sign In</string>
+    <string name="belum_punya_akun">Belum punya akun ?</string>
+    <string name="registration">Registrasi</string>
+    <string name="selamat_datang">Selamat Datang</string>
+    <string name="buat_kata_sandi">Buat kata sandi</string>
+    <string name="ulang_kata_sandi">Ulang kata sandi</string>
+    <string name="sudah_punya_akun">Sudah punya akun</string>
 </resources>

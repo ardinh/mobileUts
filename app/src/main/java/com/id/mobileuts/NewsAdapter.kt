@@ -1,9 +1,11 @@
 package com.id.mobileuts
 
 import android.app.Activity
+import android.content.Context
 import android.net.Uri
 import android.util.Log
 import android.view.View
+import com.bumptech.glide.Glide
 import com.id.mobileuts.databinding.ItemNewsBinding
 import com.id.mobileuts.models.News
 import java.text.ParseException
@@ -26,7 +28,7 @@ class NewsAdapter(
         view: View,
         viewType: Int
     ) : RecyclerWithTitleFooterViewHolder(view, viewType) {
-        fun setContent(data: News) {
+        fun setContent(context: Context, data: News) {
             ItemNewsBinding.bind(itemView).apply {
                 val date = stringToCalendar(
                     data.publishedAt,
@@ -36,7 +38,11 @@ class NewsAdapter(
                     onClickItem(data)
                 }
                 if(data.urlToImage != null){
-                    imgIcon.setImageURI(Uri.parse(data.urlToImage))
+                    Glide.with(context)
+                        .load(data.urlToImage)
+                        .placeholder(R.drawable.ic_news_paper)
+                        .circleCrop()
+                        .into(imgIcon)
                 }
                 tvTitle.text = data.title
                 tvAuthor.text = data.author
@@ -49,7 +55,7 @@ class NewsAdapter(
         get() = R.layout.item_news
 
     override fun onBindView(holder: NewsAdapterVH, position: Int) {
-        holder.setContent(news[position])
+        holder.setContent(holder.itemView.context,news[position])
     }
 
     override fun buildViewHolder(view: View, viewType: Int): NewsAdapterVH =

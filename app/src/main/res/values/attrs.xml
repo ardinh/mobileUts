@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="AppTextView">
+        <attr name="android:textSize" format="dimension" />
+        <attr name="android:textColor" format="color" />
+        <attr name="android:textColorHint" format="color" />
+        <attr name="android:minHeight" format="dimension" />
+        <attr name="text_style" format="enum">
+            <enum name="regular" value="0" />
+            <enum name="italic" value="1" />
+            <enum name="bold" value="2" />
+            <enum name="bold_italic" value="3" />
+            <enum name="semi_bold" value="4" />
+            <enum name="medium" value="5" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="AppEditText" parent="AppTextView">
+        <attr name="android:background" format="reference|color" />
+    </declare-styleable>
+
+    <declare-styleable name="AppButton">
+        <attr name="ignore_padding" format="boolean" />
+        <attr name="android:background" format="reference|color" />
+        <attr name="android:paddingVertical" format="dimension" />
+        <attr name="android:paddingHorizontal" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="AppCheckBoxV2">
+        <attr name="withIcon" format="boolean" />
+        <attr name="imageSrc" format="reference|color" />
+    </declare-styleable>
+
+    <declare-styleable name="AppAdvanceButton">
+        <attr name="label" format="string" />
+        <attr name="android:background" format="reference|color" />
+        <attr name="android:paddingVertical" format="dimension" />
+        <attr name="android:paddingHorizontal" format="dimension" />
+        <attr name="text" format="string" />
+        <attr name="hint" format="string" />
+        <attr name="enabled" format="boolean" />
+        <attr name="drawableTint" format="reference|color" />
+        <attr name="drawableTintEnd" format="reference|color" />
+        <attr name="drawableStart" format="integer" />
+        <attr name="drawableEnd" format="integer" />
+        <attr name="withDrawableEnd" format="boolean" />
+        <attr name="withDrawableStart" format="boolean" />
+    </declare-styleable>
+
+</resources>

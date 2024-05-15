@@ -1,9 +1,90 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
-    <color name="blue_100">#0163C8</color>
-    <color name="blue_50">#73A4D6</color>
-    <color name="grey_80">#AEAEAE</color>
+    <color name="transparent">#00000000</color>
+
     <color name="primary_blue">@color/blue_100</color>
+
+    <color name="primary_blue_pressed">#E6006DFF</color>
+
+    <color name="text_primary">#212529</color>
+    <color name="text_disable">@color/grey_80</color>
+    <color name="text_secondary">#757575</color>
+    <color name="text_red_error">@color/red_error</color>
+
+    <color name="red_error_pressed">#E6ED0019</color>
+
+    <color name="loading_background">#99D5D1D1</color>
+
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+
+    <color name="grey_20">#F7F7F7</color>
+    <color name="grey_50">#EEEEEE</color>
+    <color name="grey_60">#D6D6D6</color>
+    <color name="grey_80">#AEAEAE</color>
+    <color name="grey_90">#9C9C9C</color>
+    <color name="grey_100">#898989</color>
+
+    <color name="grey_60_pressed">#CDCDCD</color>
+    <color name="grey_80_pressed">#E6AEAEAE</color>
+
+    <color name="keyboard_background">#E9EAEE</color>
+    <color name="calculator_operator_background">@color/grey_60</color>
+    <color name="calculator_operator_background_pressed">@color/grey_60_pressed</color>
+    <color name="calculator_key_background">@color/white</color>
+    <color name="calculator_key_background_pressed">@color/white_pressed</color>
+
+    <color name="blue_10">#F0F7FF</color>
+    <color name="blue_20">#DBECFF</color>
+    <color name="blue_50">#73A4D6</color>
+    <color name="blue_60">#2899FF</color>
+    <color name="blue_80">#006DFF</color>
+    <color name="blue_100">#0163C8</color>
+
+    <color name="blue_80_pressed">#0064FF</color>
+
+    <color name="blue_20_a20">#33DBECFF</color>
+
+    <color name="green_accent">#04BA27</color>
+    <color name="green_accent_pressed">#E604BA27</color>
+
+    <color name="green_10">#DFF6F6</color>
+    <color name="green_20">#CAEEE5</color>
+    <color name="green_50">#81BB95</color>
+    <color name="green_80">#038C67</color>
+    <color name="green_80_a20">#33038C67</color>
+    <color name="green_80_a70">#99038C67</color>
+    <color name="green_status_bar">#01654A</color>
+
+    <color name="orange_10">#FFF5EB</color>
+    <color name="orange_80">#FF7200</color>
+
+    <color name="red_10">#FFEBEF</color>
+    <color name="red_20">#FFAEBF</color>
+    <color name="red_40">#EB6B6B</color>
+    <color name="red_50">#FF5378</color>
+    <color name="red_60">#FB004E</color>
+    <color name="red_80">#ED0019</color>
+
+    <color name="red_80_pressed">#E40019</color>
+
+    <color name="black">#FF000000</color>
+    <color name="black_alpha_20">#33000000</color>
+    <color name="black_alpha_50">#66000000</color>
+
+    <color name="white">#FFFFFFFF</color>
+    <color name="white_80">#CCFFFFFF</color>
+    <color name="red_error">#ED0019</color>
+
+    <color name="diagram_1">#3E68C5</color>
+    <color name="diagram_2">#CC4627</color>
+    <color name="diagram_3">#F29D38</color>
+    <color name="diagram_4">#449331</color>
+    <color name="diagram_5">#8C2194</color>
+    <color name="diagram_6">#4198C2</color>
+
+    <color name="white_pressed">#F5F5F5</color>
 </resources>
